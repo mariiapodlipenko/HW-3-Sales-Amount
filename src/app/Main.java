@@ -4,6 +4,8 @@ public class Main {
 
     static int productNumber;
     static String productType;
+    static double salesQuantity;
+    static double productPrice;
     static double totalSalesAmount;
     static double tradingDaysCount;
     static double avgDailySalesAmount;
@@ -13,8 +15,10 @@ public class Main {
 
         productNumber = 1;
         productType = "smartphone";
-        totalSalesAmount = 12153.41;
+        salesQuantity = 59;
+        productPrice = 205.99;
         tradingDaysCount = 5;
+        totalSalesAmount = salesQuantity * productPrice;
         avgDailySalesAmount = totalSalesAmount / tradingDaysCount;
 
         System.out.printf("%n Product No %s: %s," +
@@ -24,8 +28,10 @@ public class Main {
 
         productNumber = 2;
         productType = "laptop";
-        totalSalesAmount = 10486.85;
+        salesQuantity = 5;
+        productPrice = 2097.37;
         tradingDaysCount = 7;
+        totalSalesAmount = salesQuantity * productPrice;
         avgDailySalesAmount = totalSalesAmount / tradingDaysCount;
 
         System.out.printf("%n Product No %s: %s," +
